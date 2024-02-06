@@ -10,4 +10,13 @@ const createPet = function (name, species) {
         console.log(`${this.name} need nap. Zzz..`);
         this.isTired = 1;
      },
-     
+     play: function () {
+        if (this.isTired === 10) {
+            console.log("Too tired to play.");
+            this.sleep();
+        } else {
+            console.log(`Yay! ${this.name} loves to play`);
+            this.isTired += 1;
+        },
+    }
+};
