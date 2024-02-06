@@ -6,3 +6,8 @@ const createPet = function (name, species) {
      name: name,
      species: species,
      isTired: 5,
+     sleep: function () {
+        console.log(`${this.name} need nap. Zzz..`);
+        this.isTired = 1;
+     },
+     
